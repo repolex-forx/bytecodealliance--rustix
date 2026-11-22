@@ -1,0 +1,27 @@
+[2026-11-22T10:24:42Z] === ENRICH ITERATION 1 START | repo=bytecodealliance/rustix sha=c4caf5ca ===
+[2026-11-22T10:24:42Z] [iter=1] PHASE START: enrich repo=bytecodealliance/rustix sha=c4caf5ca runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c4caf5ca-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c4caf5caaa7e93828a2e4a4cdba1dd0171e45717.nq.gz
+[2026-11-22T10:24:50Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T10:25:16Z] [iter=1] AST store loaded triples=3089753 load_secs=25 mem_mb=929 MB
+[2026-11-22T10:25:16Z] [iter=1] Step 2: Finding LSP targets mem_mb=929 MB
+[2026-11-22T10:25:19Z] [iter=1] LSP targets found call_sites=19929 imports=1079 extends=0 implements=147 secs=3
+[2026-11-22T10:25:21Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=929 MB
+[2026-11-22T10:25:38Z] [iter=1] Position index built positions=219558 nodes_with_types=262031 secs=17 mem_mb=929 MB
+[2026-11-22T10:25:38Z] [iter=1] Step 3: Starting LSP resolution mem_mb=929 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T10:25:38Z] [iter=1] Resolving target type target_type=call_site count=19929
+[2026-11-22T10:25:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=src/backend/linux_raw/arch/arm.rs
+[2026-11-22T10:26:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=13 resolved=76 errors=0 current=src/backend/linux_raw/process/syscalls.rs
+[2026-11-22T10:27:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.9 files_done=21 resolved=252 errors=0 current=tests/termios/termios.rs
+[2026-11-22T10:30:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=26 resolved=444 errors=0 current=tests/fs/openat.rs
+[2026-11-22T10:32:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=71 resolved=659 errors=0 current=src/io_uring/bindgen_types.rs
+[2026-11-22T10:33:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.5 files_done=110 resolved=823 errors=0 current=tests/pty/openpty.rs
+[2026-11-22T10:33:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=158 resolved=984 errors=0 current=src/backend/libc/net/write_sockaddr.rs
+[2026-11-22T10:34:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.7 files_done=274 resolved=1100 errors=0 current=src/backend/linux_raw/pipe/types.rs
+[2026-11-22T10:34:48Z] [iter=1] Target type resolved target_type=call_site resolved=1156 errors=0 secs=550 mem_mb=929 MB
+[2026-11-22T10:34:48Z] [iter=1] Resolving target type target_type=import_statement count=1079
+[2026-11-22T10:34:53Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=10.2 files_done=1 resolved=0 errors=0 current=src/backend/libc/termios/syscalls.rs
+[2026-11-22T10:35:00Z] [iter=1] Target type resolved target_type=import_statement resolved=102 errors=0 secs=11 mem_mb=929 MB
+[2026-11-22T10:35:00Z] [iter=1] Resolving target type target_type=implements_clause count=147
+[2026-11-22T10:35:09Z] [iter=1] Target type resolved target_type=implements_clause resolved=84 errors=0 secs=9 mem_mb=929 MB
+[2026-11-22T10:41:35Z] [iter=1] Step 5: Writing final enrichment file triples=67536
+[2026-11-22T10:41:35Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/c4caf5caaa7e93828a2e4a4cdba1dd0171e45717.nq.gz size_kb=1390
+[2026-11-22T10:41:35Z] [iter=1] PHASE END: enrich elapsed_s=1013 elapsed_min=16.9 total_triples=67536
