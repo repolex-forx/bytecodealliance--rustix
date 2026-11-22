@@ -578,7 +578,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.12.1/src/lib.rs"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/c4caf5caaa7e93828a2e4a4cdba1dd0171e45717/chunk-001.nq.gz",
+      "dep": "dep/c4caf5caaa7e93828a2e4a4cdba1dd0171e45717.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
